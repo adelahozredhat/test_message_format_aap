@@ -10,9 +10,25 @@
     debug:
       msg: "{{job_metadata|default('No definida')}}"
 
+  - name: "lookup('env', 'URL_BASE')"
+    debug:
+      msg: "{{lookup('env', 'URL_BASE')|default('No definida')}}"
+
+  - name: "URL"
+    debug:
+      msg: "{{URL|default('No definida')}}"
+
   - name: "AWX_URL_BASE"
     debug:
       msg: "{{AWX_URL_BASE|default('No definida')}}"
+
+  - name: "TOWER_URL"
+    debug:
+      msg: "{{TOWER_URL|default('No definida')}}"
+
+  - name: "AWX_URL"
+    debug:
+      msg: "{{AWX_URL|default('No definida')}}"
 
   - name: "awx_job_id"
     debug:
