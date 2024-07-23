@@ -2,59 +2,78 @@
   gather_facts: false
   tasks:
 
-  - debug:
-      msg: "{{awx_job_id}}"
+  - name: "awx_job_id"
+    debug:
+      msg: "{{awx_job_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_job_launch_type}}"
+  - name: "awx_job_launch_type"
+    debug:
+      msg: "{{awx_job_launch_type|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_job_template_id}}"
+  - name: "awx_job_template_id"
+    debug:
+      msg: "{{awx_job_template_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_job_template_name}}"
+  - name: "awx_job_template_name"
+    debug:
+      msg: "{{awx_job_template_name|default("No definida")}"
 
-  - debug:
-      msg: "{{awx_execution_node}}"
+  - name: "awx_execution_node"
+    debug:
+      msg: "{{awx_execution_node|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_project_revision}}"
+  - name: "awx_project_revision"
+    debug:
+      msg: "{{awx_project_revision|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_project_scm_branch}}"
+  - name: "awx_project_scm_branch"
+    debug:
+      msg: "{{awx_project_scm_branch|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_job_scm_branch}}"
+  - name: "awx_job_scm_branch"
+    debug:
+      msg: "{{awx_job_scm_branch|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_user_email}}"
+  - name: "awx_user_email"
+    debug:
+      msg: "{{awx_user_email|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_user_first_name}}"
+  - name: "awx_user_first_name"
+    debug:
+      msg: "{{awx_user_first_name|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_user_id}}"
+  - name: "awx_user_id"
+    debug:
+      msg: "{{awx_user_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_user_last_name}}"
+  - name: "awx_user_last_name"
+    debug:
+      msg: "{{awx_user_last_name|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_user_name}}"
+  - name: "awx_user_name"
+    debug:
+      msg: "{{awx_user_name|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_schedule_id}}"
+  - name: "awx_schedule_id"
+    debug:
+      msg: "{{awx_schedule_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_schedule_name}}"
+  - name: "awx_schedule_name"
+    debug:
+      msg: "{{awx_schedule_name|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_workflow_job_id}}"
+  - name: "awx_workflow_job_id"
+    debug:
+      msg: "{{awx_workflow_job_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_workflow_job_name}}"
+  - name: "awx_workflow_job_name"
+    debug:
+      msg: "{{awx_workflow_job_name|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_inventory_id}}"
+  - name: "awx_inventory_id"
+    debug:
+      msg: "{{awx_inventory_id|default("No definida")}}"
 
-  - debug:
-      msg: "{{awx_inventory_name}}"
+  - name: "awx_inventory_name"
+    debug:
+      msg: "{{awx_inventory_name|default("No definida")}}"
