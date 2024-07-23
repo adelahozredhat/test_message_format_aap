@@ -6,6 +6,10 @@
     debug:
       msg: "{{vars|default('No definida')}}"
 
+  - name: "job_metadata"
+    debug:
+      msg: "{{job_metadata|default('No definida')}}"
+
   - name: "awx_job_id"
     debug:
       msg: "{{awx_job_id|default('No definida')}}"
