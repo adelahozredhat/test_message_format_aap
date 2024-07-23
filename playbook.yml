@@ -1,0 +1,60 @@
+- hosts: localhost
+  gather_facts: false
+  tasks:
+
+  - debug:
+      msg: "{{awx_job_id}}"
+
+  - debug:
+      msg: "{{awx_job_launch_type}}"
+
+  - debug:
+      msg: "{{awx_job_template_id}}"
+
+  - debug:
+      msg: "{{awx_job_template_name}}"
+
+  - debug:
+      msg: "{{awx_execution_node}}"
+
+  - debug:
+      msg: "{{awx_project_revision}}"
+
+  - debug:
+      msg: "{{awx_project_scm_branch}}"
+
+  - debug:
+      msg: "{{awx_job_scm_branch}}"
+
+  - debug:
+      msg: "{{awx_user_email}}"
+
+  - debug:
+      msg: "{{awx_user_first_name}}"
+
+  - debug:
+      msg: "{{awx_user_id}}"
+
+  - debug:
+      msg: "{{awx_user_last_name}}"
+
+  - debug:
+      msg: "{{awx_user_name}}"
+
+  - debug:
+      msg: "{{awx_schedule_id}}"
+
+  - debug:
+      msg: "{{awx_schedule_name}}"
+
+  - debug:
+      msg: "{{awx_workflow_job_id}}"
+
+  - debug:
+      msg: "{{awx_workflow_job_name}}"
+
+  - debug:
+      msg: "{{awx_inventory_id}}"
+
+  - debug:
+      msg: "{{awx_inventory_name}}"
