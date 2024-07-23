@@ -2,9 +2,9 @@
   gather_facts: false
   tasks:
 
-  - name: "url"
+  - name: "vars"
     debug:
-      msg: "{{url|default('No definida')}}"
+      msg: "{{vars|default('No definida')}}"
 
   - name: "awx_job_id"
     debug:
