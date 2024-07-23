@@ -16,7 +16,7 @@
 
   - name: "awx_job_template_name"
     debug:
-      msg: "{{awx_job_template_name|default('No definida')}"
+      msg: "{{awx_job_template_name|default('No definida')}}"
 
   - name: "awx_execution_node"
     debug:
